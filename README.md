@@ -132,58 +132,61 @@ Aplikasi perpustakaan kini dapat digunakan melalui antarmuka frontend web, terma
 ## Screenshot
 
 ### Langkah 1 ⁜ Cek Lingkungan Pengembangan
-![Terminal](pertemuan-01\langkah-01.png "Memastikan PHP 8+, Composer, dan MySQL sudah terinstal dan dapat dijalankan dari terminal.")
+![Terminal](./pertemuan-01/langkah-01.png "Memastikan PHP 8+, Composer, dan MySQL sudah terinstal dan dapat dijalankan dari terminal.")
 
 ### Langkah 2 ⁜ Struktur Folder & Composer PSR-4
-![Code Editor](pertemuan-01\langkah-02.png "Membuat folder proyek & mengonfigurasi Composer dengan PSR-4 autoload.")
+![Code Editor](./pertemuan-01/langkah-02.png "Membuat folder proyek & mengonfigurasi Composer dengan PSR-4 autoload.")
 
 ### Langkah 3 ⁜ Konfigurasi .env & Skema Database
-![Terminal](pertemuan-01\langkah-03.png "Membuat file konfigurasi .env dan menginisialisasi database MySQL dari skema.")
+![Terminal](./pertemuan-01/langkah-03.png "Membuat file konfigurasi .env dan menginisialisasi database MySQL dari skema.")
 
 ### Langkah 4 ⁜ Env Loader & Connection PDO
-![Terminal](pertemuan-01\langkah-04.png "Membuat class Env (loader .env) dan Connection (PDO Singleton) sesuai prinsip SRP.")
+![Terminal](./pertemuan-01/langkah-04.png "Membuat class Env (loader .env) dan Connection (PDO Singleton) sesuai prinsip SRP.")
 
 ### Langkah 5 ⁜ Model, Interface & Repository Book
-![Terminal](pertemuan-01\langkah-05.png "Membuat Book (entity), BookRepositoryInterface (kontrak — prinsip DIP), dan MySQLBookRepository (implementasi konkret).")
+![Terminal](./pertemuan-01/langkah-05.png "Membuat Book (entity), BookRepositoryInterface (kontrak — prinsip DIP), dan MySQLBookRepository (implementasi konkret).")
 
 ### Langkah 6 ⁜ BookService — Logika Bisnis
-![Terminal](pertemuan-02\langkah-06.png "Membuat BookService yang berisi validasi & logika bisnis — terpisah dari HTTP dan SQL.")
+![Terminal](./pertemuan-02/langkah-06.png "Membuat BookService yang berisi validasi & logika bisnis — terpisah dari HTTP dan SQL.")
 
 ### Langkah 7 ⁜ Core Framework: Request, Response, Router, Container
-![Terminal](pertemuan-02\langkah-07.png "Membuat 4 komponen inti framework mini: Request, Response, Router, dan Container (DI).")
+![Terminal](./pertemuan-02/langkah-07.png "Membuat 4 komponen inti framework mini: Request, Response, Router, dan Container (DI).")
 
 ### Langkah 8 ⁜ BookController & Front Controller
-![Browser](pertemuan-02\langkah-08.png "Membuat BookController sebagai pintu masuk HTTP dan public/index.php sebagai Front Controller (Composition Root).")
+![Browser](./pertemuan-02/langkah-08.png "Membuat BookController sebagai pintu masuk HTTP dan public/index.php sebagai Front Controller (Composition Root).")
 
 ### Langkah 9 ⁜ Uji CRUD Buku dengan cURL
-![Terminal](pertemuan-02\langkah-09.png "Menguji seluruh endpoint CRUD Buku (GET, POST, PUT, DELETE) menggunakan cURL.")
+![Terminal](./pertemuan-02/langkah-09.png "Menguji seluruh endpoint CRUD Buku (GET, POST, PUT, DELETE) menggunakan cURL.")
 
 ### Langkah 10 ⁜ Uji Validasi & Error Handling
-![Terminal](pertemuan-03\langkah-10.png "Memastikan API mengembalikan status 404, 405, dan 422 dengan pesan yang jelas untuk input tidak valid.")
+![Terminal](./pertemuan-03/langkah-10.png "Memastikan API mengembalikan status 404, 405, dan 422 dengan pesan yang jelas untuk input tidak valid.")
 
 ### Langkah 11 ⁜ Uji dengan Postman
-![Rest API Client](pertemuan-03\langkah-11.png "Menguji API menggunakan Postman sebagai bukti pengujian alternatif dari cURL.")
+![Rest API Client](./pertemuan-03/langkah-11.png "Menguji API menggunakan Postman sebagai bukti pengujian alternatif dari cURL.")
 
 ### Langkah 12 ⁜ Skrip Uji Otomatis
-![Terminal](pertemuan-04\langkah-12.png "Membuat skrip api_test.sh untuk menguji seluruh alur CRUD secara otomatis.")
+![Terminal](./pertemuan-04/langkah-12.png "Membuat skrip api_test.sh untuk menguji seluruh alur CRUD secara otomatis.")
 
 ### Langkah 13 ⁜ CRUD Kategori — Schema & Repository
-![Terminal](pertemuan-05\langkah-13.png "Menambah tabel categories + membuat Model, Interface, dan Repository untuk kategori (mengikuti pola Book).")
+![Terminal](./pertemuan-05/langkah-13.png "Menambah tabel categories + membuat Model, Interface, dan Repository untuk kategori (mengikuti pola Book).")
 
 ### Langkah 14 ⁜ CRUD Kategori — Service, Controller & Route
-![Terminal](pertemuan-05\langkah-14.png "Menambahkan CategoryService, CategoryController, dan mendaftarkan route kategori di index.php.")
+![Terminal](./pertemuan-05/langkah-14.png "Menambahkan CategoryService, CategoryController, dan mendaftarkan route kategori di index.php.")
 
 ### Langkah 15 ⁜ Uji CRUD Kategori
-![Terminal](pertemuan-05\langkah-15.png "Menguji seluruh operasi CRUD Kategori (POST, PUT, DELETE, validasi).")
+![Terminal](./pertemuan-05/langkah-15.png "Menguji seluruh operasi CRUD Kategori (POST, PUT, DELETE, validasi).")
 
 ### Langkah 16 ⁜ Aktifkan CORS di Backend
-![Terminal](pertemuan-06\langkah-16.png "Menambahkan header CORS agar frontend di port 3000 bisa mengakses backend di port 8000.")
+![Terminal](./pertemuan-06/langkah-16.png "Menambahkan header CORS agar frontend di port 3000 bisa mengakses backend di port 8000.")
 
 ### Langkah 17 ⁜ Setup Frontend & Konfigurasi API
-![Browser](pertemuan-06\langkah-17.png "Membuat folder frontend + file dasar (index.html, custom.css, config.js, api.js, utils.js).")
+![Browser](./pertemuan-06/langkah-17.png "Membuat folder frontend + file dasar (index.html, custom.css, config.js, api.js, utils.js).")
 
 ### Langkah 18 ⁜ Halaman Dashboard & Buku
-![Browser](pertemuan-06\langkah-18.png "Membuat dashboard.js, books.js, dan app.js (router) agar frontend terhubung ke API.")
+![Browser](./pertemuan-06/langkah-18.png "Membuat dashboard.js, books.js, dan app.js (router) agar frontend terhubung ke API.")
 
 ### Langkah 19 ⁜ Halaman Kategori & Integrasi Penuh
-![Browser](pertemuan-07\langkah-19.png "Membuat categories.js, lalu jalankan backend + frontend bersamaan untuk uji end-to-end.")
+![Browser](./pertemuan-07/langkah-19.png "Membuat categories.js, lalu jalankan backend + frontend bersamaan untuk uji end-to-end.")
+
+### Langkah 20 ⁜ Finalisasi & Push Repository
+![Browser](./pertemuan-07/langkah-20.png "Merapikan repository GitHub & menambahkan dokumentasi akhir (README, screenshot final).")
